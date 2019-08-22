@@ -15,6 +15,7 @@ target 'Stress To Joy' do
   pod 'Hero'
   pod 'Bagel', '~>  1.3.2'
   pod 'NVActivityIndicatorView'
+  pod 'SwiftMessages'
   # Pods for Stress To Joy
 
 end

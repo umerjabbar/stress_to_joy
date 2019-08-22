@@ -20,7 +20,7 @@
         <!--Forgot View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ForgotViewController" customModule="Stress_To_Joy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotViewController" id="BYZ-38-t0r" customClass="ForgotViewController" customModule="Stress_To_Joy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
         <!--Signup View Controller-->
         <scene sceneID="ODZ-To-I6g">
             <objects>
-                <viewController id="onr-ZT-z7S" customClass="SignupViewController" customModule="Stress_To_Joy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewController" id="onr-ZT-z7S" customClass="SignupViewController" customModule="Stress_To_Joy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2xO-bg-O02">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

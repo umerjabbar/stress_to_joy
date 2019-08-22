@@ -73,6 +73,10 @@
 		F723F89E22EDE13E006A7E63 /* ProritiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F89D22EDE13E006A7E63 /* ProritiesViewController.swift */; };
 		F723F8A022EDE161006A7E63 /* AddProritiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F89F22EDE161006A7E63 /* AddProritiesViewController.swift */; };
 		F723F8A222EDE183006A7E63 /* WellnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F8A122EDE183006A7E63 /* WellnessViewController.swift */; };
+		F7B47071230DBC9B009907E6 /* StressToJoy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B4706F230DBC9B009907E6 /* StressToJoy.xcdatamodeld */; };
+		F7B47074230F18AD009907E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B47073230F18AD009907E6 /* User.swift */; };
+		F7B47076230F21D5009907E6 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B47075230F21D5009907E6 /* LoadingOverlay.swift */; };
+		F7B47078230F21E7009907E6 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B47077230F21E7009907E6 /* Messages.swift */; };
 		F7FC722022ECF030000C533C /* CollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC721522ECF030000C533C /* CollectionView+Extension.swift */; };
 		F7FC722122ECF030000C533C /* Int+Exrtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC721622ECF030000C533C /* Int+Exrtension.swift */; };
 		F7FC722222ECF030000C533C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC721722ECF030000C533C /* UIColorExtension.swift */; };
@@ -158,6 +162,10 @@
 		F723F89D22EDE13E006A7E63 /* ProritiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProritiesViewController.swift; sourceTree = "<group>"; };
 		F723F89F22EDE161006A7E63 /* AddProritiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProritiesViewController.swift; sourceTree = "<group>"; };
 		F723F8A122EDE183006A7E63 /* WellnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessViewController.swift; sourceTree = "<group>"; };
+		F7B47070230DBC9B009907E6 /* StressToJoy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StressToJoy.xcdatamodel; sourceTree = "<group>"; };
+		F7B47073230F18AD009907E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F7B47075230F21D5009907E6 /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		F7B47077230F21E7009907E6 /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		F7FC721522ECF030000C533C /* CollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extension.swift"; sourceTree = "<group>"; };
 		F7FC721622ECF030000C533C /* Int+Exrtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Exrtension.swift"; sourceTree = "<group>"; };
 		F7FC721722ECF030000C533C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -232,6 +240,7 @@
 		C8AF113A22D9044200FFBA4F /* Stress To Joy */ = {
 			isa = PBXGroup;
 			children = (
+				F7B47072230F189A009907E6 /* New Group */,
 				F7FC721422ECF030000C533C /* Extensions */,
 				C8AF114D22D9063D00FFBA4F /* Resources */,
 				F723F89522EDAAB7006A7E63 /* ViewController -R */,
@@ -240,6 +249,7 @@
 				C8AF114222D9044500FFBA4F /* Assets.xcassets */,
 				C8AF113B22D9044200FFBA4F /* AppDelegate.swift */,
 				C8AF114722D9044500FFBA4F /* Info.plist */,
+				F7B4706F230DBC9B009907E6 /* StressToJoy.xcdatamodeld */,
 			);
 			path = "Stress To Joy";
 			sourceTree = "<group>";
@@ -348,6 +358,16 @@
 				C884E39C22E22FD500F178AA /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F7B47072230F189A009907E6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F7B47073230F18AD009907E6 /* User.swift */,
+				F7B47075230F21D5009907E6 /* LoadingOverlay.swift */,
+				F7B47077230F21E7009907E6 /* Messages.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F7FC721422ECF030000C533C /* Extensions */ = {
@@ -526,6 +546,7 @@
 				F7FC722222ECF030000C533C /* UIColorExtension.swift in Sources */,
 				F7FC722322ECF030000C533C /* TableView+Extension.swift in Sources */,
 				C884E39F22E319C400F178AA /* PriorityListViewController.swift in Sources */,
+				F7B47071230DBC9B009907E6 /* StressToJoy.xcdatamodeld in Sources */,
 				F7FC722422ECF030000C533C /* String+Extension.swift in Sources */,
 				F723F8A022EDE161006A7E63 /* AddProritiesViewController.swift in Sources */,
 				F7FC722822ECF030000C533C /* Image+Extension.swift in Sources */,
@@ -541,10 +562,12 @@
 				F723F89A22EDD988006A7E63 /* AddJournalViewController.swift in Sources */,
 				C884E39D22E22FD500F178AA /* ProfileViewController.swift in Sources */,
 				F723F87322EDAA87006A7E63 /* DashboardViewController.swift in Sources */,
+				F7B47078230F21E7009907E6 /* Messages.swift in Sources */,
 				C87BA6F922E2264B004821A4 /* MainTabBarController.swift in Sources */,
 				C86AF87B22DA2BBE00915525 /* DrawableViewController.swift in Sources */,
 				C8920D2C22D9D4A200190B09 /* SignupViewController.swift in Sources */,
 				F723F89C22EDE11D006A7E63 /* MindfulViewController.swift in Sources */,
+				F7B47076230F21D5009907E6 /* LoadingOverlay.swift in Sources */,
 				C8920D2E22D9D4AD00190B09 /* ForgotViewController.swift in Sources */,
 				F7FC722622ECF030000C533C /* Button+Extension.swift in Sources */,
 				C87BA6F722E223F2004821A4 /* HomeViewController.swift in Sources */,
@@ -554,6 +577,7 @@
 				C87BA6FB22E22BD3004821A4 /* Extentions.swift in Sources */,
 				F723F87122EDA8E6006A7E63 /* BaseNavigationController.swift in Sources */,
 				F7FC722022ECF030000C533C /* CollectionView+Extension.swift in Sources */,
+				F7B47074230F18AD009907E6 /* User.swift in Sources */,
 				F723F89822EDC55D006A7E63 /* JournalViewController.swift in Sources */,
 				C884E3A122E31A6100F178AA /* SetPrioritiesViewController.swift in Sources */,
 				F7FC722522ECF030000C533C /* Dictionary+Extension.swift in Sources */,
@@ -760,6 +784,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7B4706F230DBC9B009907E6 /* StressToJoy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7B47070230DBC9B009907E6 /* StressToJoy.xcdatamodel */,
+			);
+			currentVersion = F7B47070230DBC9B009907E6 /* StressToJoy.xcdatamodel */;
+			path = StressToJoy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C8AF113022D9044200FFBA4F /* Project object */;
 }

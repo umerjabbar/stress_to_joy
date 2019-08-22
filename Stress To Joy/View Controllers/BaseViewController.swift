@@ -21,14 +21,20 @@ class BaseViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func startLoading(){
+        LoadingOverlay.shared.showOverlay()
     }
-    */
+    
+    func stopLoading(){
+        LoadingOverlay.shared.hideOverlayView()
+    }
+    
+    func showSuccessMessage(message:String?){
+        Messages.showSuccessMessage(message: message)
+    }
+    
+    func showErrorWith(message: String?){
+        Messages.showErrorWith(message: message)
+    }
 
 }
