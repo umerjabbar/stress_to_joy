@@ -8,6 +8,7 @@
 
 import UIKit
 import NVActivityIndicatorView
+import Firebase
 
 class MindfulViewController: BaseViewController {
     
@@ -28,6 +29,21 @@ class MindfulViewController: BaseViewController {
         self.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .up), dismissing: .uncover(direction: .down))
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        
+        guard self.counter != 0 else{
+            return
+        }
+        
+        Database.database().reference().child("mindful_exercise_time").child(AppStateManager.shared.id).childByAutoId().setValue([
+            "time": self.timerLabel.text,
+            "date": "\(Date().shortDate)"
+            ])
+        
+        super.viewWillDisappear(animated)
     }
     
     @IBAction func backButtonAction(_ sender: Any) {

@@ -7,76 +7,53 @@
 //
 
 import UIKit
-import Alamofire
+import Firebase
 
 class SignInViewController: BaseViewController {
     
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        
     }
     
-    func signIn(){
-        
-        /**
-         login
-         get http://transformingdepression.com/auth/login.php
-         */
-        
-        // Add Headers
-        let headers = [
-            "Cookie":"PHPSESSID=093abdb1e3ef3d241f63c9cb5d8a947e",
-        ]
-        
-        // Add URL parameters
-        let urlParams = [
-            "email":"umerjabbar456@gmail.com",
-            "password":"abcxyz",
-        ]
-        
-        // Fetch Request
-        Alamofire.request("http://transformingdepression.com/auth/login.php", method: .get, parameters: urlParams, headers: headers)
-            .validate(statusCode: 200..<300)
-            .responseJSON { response in
-                if (response.result.error == nil) {
-                    debugPrint("HTTP Response Body: \(response.data)")
-                }
-                else {
-                    debugPrint("HTTP Request failed: \(response.result.error)")
-                }
+    @IBAction func buttonAction(_ sender: Any) {
+        if let email = self.emailTextField.text, !email.isEmpty {
+            if let password = self.passwordTextField.text, !password.isEmpty {
+                self.signIn(email: email, password: password)
+            }else{
+                self.showErrorWith(message: "Please type in your password")
+            }
+        }else{
+            self.showErrorWith(message: "Please type in your email")
         }
     }
     
     
-    
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        //        self.topConstraint.constant = 170
-        //        self.view.alpha = 0
+    func signIn(email: String, password: String){
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let user = authResult?.user{
+                Database.database().reference().child("users").child(user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let dict = snapshot.value as? [String:String] {
+                        AppStateManager.shared.f_name =  dict["f_name"] ?? ""
+                        AppStateManager.shared.l_name =  dict["l_name"] ?? ""
+                        AppStateManager.shared.email =  user.email ?? ""
+                        AppStateManager.shared.id =  user.uid
+                        self.performSegue(withIdentifier: "goHome", sender: self)
+                    }else{
+                        self.showErrorWith(message: "Some error occured")
+                    }
+                })
+            }else if let err = error {
+                self.showErrorWith(message: err.localizedDescription)
+            }else{
+                self.showErrorWith(message: "Unknown error occured")
+            }
+        }
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        //        UIView.animate(withDuration: 1) {
-        //            self.topConstraint.constant = 0
-        //            self.view.alpha = 1
-        //            self.view.layoutIfNeeded()
-        //        }
-    }
-    
-    override func viewDidLayoutSubviews() {
-        
-    }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

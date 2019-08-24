@@ -9,9 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="ABEAKRG.TTF">
-            <string>AbeatbyKai</string>
-        </array>
         <array key="Mostardesign - Sofia Pro Bold.otf">
             <string>SofiaProBold</string>
         </array>
@@ -23,6 +20,9 @@
         </array>
         <array key="Mostardesign - Sofia Pro Semi Bold.otf">
             <string>SofiaProSemiBold</string>
+        </array>
+        <array key="abeatbyKaiRegular.otf">
+            <string>AbeatbyKai</string>
         </array>
     </customFonts>
     <scenes>
@@ -187,7 +187,7 @@
                                 <rect key="frame" x="172" y="175" width="132" height="125"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3-word Journaling" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcB-ay-VNV">
-                                        <rect key="frame" x="0.0" y="42.5" width="132" height="40"/>
+                                        <rect key="frame" x="0.0" y="45" width="132" height="34.5"/>
                                         <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -204,7 +204,7 @@
                                 <rect key="frame" x="18" y="175" width="132" height="125"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Properties of the Day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjv-TG-7Nx">
-                                        <rect key="frame" x="0.0" y="42.5" width="132" height="40"/>
+                                        <rect key="frame" x="0.0" y="45" width="132" height="34.5"/>
                                         <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -221,7 +221,7 @@
                                 <rect key="frame" x="18" y="272" width="132" height="125"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMm-dr-Okf">
-                                        <rect key="frame" x="0.0" y="52.5" width="132" height="20"/>
+                                        <rect key="frame" x="0.0" y="54" width="132" height="17.5"/>
                                         <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -238,7 +238,7 @@
                                 <rect key="frame" x="172" y="272" width="132" height="125"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindful Excercise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-wF-Ha3">
-                                        <rect key="frame" x="0.0" y="42.5" width="132" height="40"/>
+                                        <rect key="frame" x="0.0" y="45.5" width="132" height="34.5"/>
                                         <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -418,7 +418,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample_Profile" translatesAutoresizingMaskIntoConstraints="NO" id="ovT-PO-Fmu">
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample_Profile" translatesAutoresizingMaskIntoConstraints="NO" id="ovT-PO-Fmu">
                                         <rect key="frame" x="260" y="50" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="iUe-qO-gj2"/>
@@ -460,46 +460,7 @@
                                             <attributes>
                                                 <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                    <tabStops>
-                                                        <textTab alignment="left" location="28">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="56">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="84">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="112">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="140">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="168">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="196">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="224">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="252">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="280">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="308">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="336">
-                                                            <options/>
-                                                        </textTab>
-                                                    </tabStops>
-                                                </paragraphStyle>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 <integer key="NSUnderline" value="1"/>
                                                 <color key="NSUnderlineColor" white="0.12975999999999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </attributes>
@@ -508,46 +469,7 @@
                                             <attributes>
                                                 <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                    <tabStops>
-                                                        <textTab alignment="left" location="28">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="56">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="84">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="112">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="140">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="168">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="196">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="224">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="252">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="280">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="308">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="336">
-                                                            <options/>
-                                                        </textTab>
-                                                    </tabStops>
-                                                </paragraphStyle>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 <integer key="NSUnderline" value="1"/>
                                             </attributes>
                                         </fragment>
@@ -1083,6 +1005,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZwC-cV-qUc"/>
                     </view>
+                    <connections>
+                        <outlet property="point1TextField" destination="yd9-6G-g6A" id="JLv-yL-Yjv"/>
+                        <outlet property="point2TextField" destination="jwr-R5-5e4" id="PGC-YS-IRk"/>
+                        <outlet property="point3TextField" destination="eer-iR-Cc9" id="Gg6-gS-zdu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jE-VD-NlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1347,6 +1274,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PfX-HZ-1KL"/>
                     </view>
+                    <connections>
+                        <outlet property="pointTextField" destination="hGa-Ek-TQQ" id="TGT-3O-NWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cv-Dy-6Rd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1521,7 +1451,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSg-NS-HwQ">
                                 <rect key="frame" x="20" y="168" width="130" height="137"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:40 am" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCm-Hd-nhJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCm-Hd-nhJ">
                                         <rect key="frame" x="12" y="25" width="106" height="17"/>
                                         <fontDescription key="fontDescription" name="SofiaProMedium" family="Sofia Pro" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -1552,7 +1482,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3q7-Da-NS5">
                                 <rect key="frame" x="170" y="168" width="130" height="137"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:10 pm" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb8-tB-Kfe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb8-tB-Kfe">
                                         <rect key="frame" x="12" y="25" width="106" height="17"/>
                                         <fontDescription key="fontDescription" name="SofiaProMedium" family="Sofia Pro" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1640,8 +1570,10 @@
                         <viewLayoutGuide key="safeArea" id="7A7-24-YHF"/>
                     </view>
                     <connections>
+                        <outlet property="sleepTimeLabel" destination="Eb8-tB-Kfe" id="3lh-gR-ipH"/>
                         <outlet property="startButton" destination="A5T-55-TBC" id="vm2-ha-uCq"/>
                         <outlet property="stopButton" destination="svW-Ph-bZC" id="xeN-hB-NaY"/>
+                        <outlet property="wakeTimeLabel" destination="XCm-Hd-nhJ" id="RGk-NX-3hH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlQ-0J-HQO" userLabel="First Responder" sceneMemberID="firstResponder"/>

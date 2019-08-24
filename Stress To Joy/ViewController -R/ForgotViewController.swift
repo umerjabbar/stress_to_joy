@@ -7,27 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
 class ForgotViewController: BaseViewController {
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    var email = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func backPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonAction(_ sender: Any) {
+        if let email = self.emailTextField.text, !email.isEmpty {
+            self.forgotPassword(email: email)
+        }else{
+            self.showErrorWith(message: "Please type in your email")
+        }
     }
-    */
+    
+    
+    func forgotPassword(email: String){
+        Auth.auth().sendPasswordReset(withEmail: self.email) { (error) in
+            if let err = error {
+                self.showErrorWith(message: err.localizedDescription)
+            }else{
+                self.showSuccessMessage(message: "Rest email has been sent to you")
+            }
+        }
+    }
 
 }

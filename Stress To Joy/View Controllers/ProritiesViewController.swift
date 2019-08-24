@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProritiesViewController: BaseViewController {
     
@@ -16,11 +17,7 @@ class ProritiesViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var items = [
-        ("1", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "),
-        ("2", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using "),
-        ("3", "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.")
-    ]
+    var items = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +26,15 @@ class ProritiesViewController: BaseViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        Database.database().reference().child("priorities_of_the_day").child(AppStateManager.shared.id).observe(.value) { (snapshot) in
+            if let dict = snapshot.value as? [String:String] {
+                self.items = dict.map({ (key,value) -> String in
+                    return value
+                })
+                self.tableView.reloadData()
+            }
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -54,7 +60,7 @@ extension ProritiesViewController : UITableViewDataSource {
 //        }
         
         if let label = cell.viewWithTag(11) as? UILabel {
-            label.text = self.items[indexPath.row].1
+            label.text = self.items[indexPath.row]
         }
         
         return cell

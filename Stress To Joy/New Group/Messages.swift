@@ -25,17 +25,17 @@ class Messages {
     
     class func showParmenantSuccessMessage(message:String){
         
-        var config = SwiftMessages.Config()
-        config.presentationStyle = .top
-        config.interactiveHide = false
-        config.duration = .forever
-        let messageView = MessageView.viewFromNib(layout: .cardView)
-        let iconStyle:IconStyle = .default
-        let iconImage = iconStyle.image(theme: .success)
-        messageView.configureTheme(backgroundColor: Constants.AppColor, foregroundColor: .white, iconImage: iconImage)
-        messageView.configureContent(title: "", body: message)
-        messageView.button?.isHidden = true
-        SwiftMessages.show(config: config, view: messageView)
+//        var config = SwiftMessages.Config()
+//        config.presentationStyle = .top
+//        config.interactiveHide = false
+//        config.duration = .forever
+//        let messageView = MessageView.viewFromNib(layout: .cardView)
+//        let iconStyle:IconStyle = .default
+//        let iconImage = iconStyle.image(theme: .success)
+//        messageView.configureTheme(backgroundColor: Constants.AppColor, foregroundColor: .white, iconImage: iconImage)
+//        messageView.configureContent(title: "", body: message)
+//        messageView.button?.isHidden = true
+//        SwiftMessages.show(config: config, view: messageView)
         
     }
     

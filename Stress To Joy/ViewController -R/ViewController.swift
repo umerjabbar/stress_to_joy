@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: BaseViewController {
 
@@ -20,7 +21,13 @@ class ViewController: BaseViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.performSegue(withIdentifier: "toSignIn", sender: nil)
+        if let user = Auth.auth().currentUser {
+            AppStateManager.shared.email =  user.email ?? ""
+            AppStateManager.shared.id =  user.uid
+            self.performSegue(withIdentifier: "goHome", sender: nil)
+        }else{
+            self.performSegue(withIdentifier: "toSignIn", sender: nil)
+        }
     }
 
     

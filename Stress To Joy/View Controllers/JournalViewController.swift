@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class JournalViewController: BaseViewController {
     
@@ -16,11 +17,7 @@ class JournalViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var items = [
-        ("9:24 am", ["@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index ", "@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index ", "@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index "]),
-        ("Saturday 2:24 am", ["@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index ", "@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index ", "@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index "]),
-        ("Friday 9:24 am", ["@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index ", "@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index ", "@josef What about it is counter intuitive? Dictionaries are key, value pairs, so the idea of an index "])
-    ]
+    var items = [(String,[String])]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +26,15 @@ class JournalViewController: BaseViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        Database.database().reference().child("three_word_gratitude").child(AppStateManager.shared.id).observe(.value) { (snapshot) in
+            if let dict = snapshot.value as? [String:[String]] {
+                self.items = dict.map({ (key,value) -> (String,[String]) in
+                    return (key,value)
+                })
+                self.tableView.reloadData()
+            }
+        }
         
         // Do any additional setup after loading the view.
     }

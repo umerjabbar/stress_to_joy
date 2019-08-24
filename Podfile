@@ -17,5 +17,10 @@ target 'Stress To Joy' do
   pod 'NVActivityIndicatorView'
   pod 'SwiftMessages'
   # Pods for Stress To Joy
+  
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'Firebase/Analytics'
 
 end

@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 class AddProritiesViewController: BaseViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    
+    @IBOutlet weak var pointTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,24 +24,26 @@ class AddProritiesViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func backButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneButtonAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        guard let point = self.pointTextField.text, !point.isEmpty else{
+            self.showErrorWith(message: "Please type in point")
+            return
+        }
+        
+        Database.database().reference().child("priorities_of_the_day").child(AppStateManager.shared.id).childByAutoId().setValue(point) { (error, snapshot) in
+            if let err = error {
+                self.showErrorWith(message: err.localizedDescription)
+            }else{
+                self.showSuccessMessage(message: "Successfully added")
+                self.dismiss(animated: true, completion: nil)
+            }
+            
+        }
     }
     
 }

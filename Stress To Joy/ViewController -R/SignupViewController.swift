@@ -7,27 +7,80 @@
 //
 
 import UIKit
+import Firebase
 
 class SignupViewController: BaseViewController {
+    
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
 
+    
+    var email = ""
+    var password = ""
+    var f_name = ""
+    var l_name = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        
     }
     
-
+    
     @IBAction func backPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func buttonAction(_ sender: Any) {
+        if let f_name = self.firstNameField.text, f_name.isEmpty {
+            self.showErrorWith(message: "Please type in your first name")
+            return
+        }else{
+            self.f_name = self.firstNameField.text ?? ""
+        }
+        
+        if let l_name = self.lastNameField.text, l_name.isEmpty {
+            self.showErrorWith(message: "Please type in your last name")
+            return
+        }else{
+            self.l_name = self.lastNameField.text ?? ""
+        }
+        
+        
+        if let email = self.emailTextField.text, !email.isEmpty {
+            if let password = self.passwordTextField.text, !password.isEmpty {
+                self.signup(email: email, password: password)
+            }else{
+                self.showErrorWith(message: "Please type in your password")
+            }
+        }else{
+            self.showErrorWith(message: "Please type in your email")
+        }
     }
-    */
-
+    
+    func signup(email: String, password: String){
+        
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let result = authResult {
+                Database.database().reference().child("users").child(result.user.uid).setValue([
+                    "id": result.user.uid,
+                    "f_name": self.f_name,
+                    "l_name": self.l_name,
+                    "email": result.user.email ?? self.email,
+                    ])
+                self.showSuccessMessage(message: "Successfully created")
+                self.dismiss(animated: true, completion: nil)
+            }else if let err = error {
+                self.showErrorWith(message: err.localizedDescription)
+            }else{
+                self.showErrorWith(message: "Unknown error occured")
+            }
+        }
+        
+    }
+    
+    
 }
