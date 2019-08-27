@@ -11,9 +11,9 @@ import Firebase
 
 class JournalViewController: BaseViewController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
 
     @IBOutlet weak var tableView: UITableView!
     

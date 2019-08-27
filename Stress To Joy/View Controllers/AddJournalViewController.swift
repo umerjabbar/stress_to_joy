@@ -11,9 +11,9 @@ import Firebase
 
 class AddJournalViewController: BaseViewController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
     
     @IBOutlet weak var point1TextField: UITextField!
     @IBOutlet weak var point2TextField: UITextField!
@@ -46,7 +46,9 @@ class AddJournalViewController: BaseViewController {
         }
         
         let array = [point1,point2,point3]
-        Database.database().reference().child("three_word_gratitude").child(AppStateManager.shared.id).child(Date().fullDateTime).setValue(array) { (error, snapshot) in
+        self.startLoading()
+        Database.database().reference().child("three_word_gratitude").child(AppStateManager.shared.id).child(Date().fullDate).setValue(array) { (error, snapshot) in
+            self.stopLoading()
             if let err = error {
                 self.showErrorWith(message: err.localizedDescription)
             }else{

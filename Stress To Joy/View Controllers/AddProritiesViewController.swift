@@ -11,9 +11,9 @@ import Firebase
 
 class AddProritiesViewController: BaseViewController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
     
     @IBOutlet weak var pointTextField: UITextField!
     
@@ -34,8 +34,9 @@ class AddProritiesViewController: BaseViewController {
             self.showErrorWith(message: "Please type in point")
             return
         }
-        
-        Database.database().reference().child("priorities_of_the_day").child(AppStateManager.shared.id).childByAutoId().setValue(point) { (error, snapshot) in
+        self.startLoading()
+        Database.database().reference().child("priorities_of_the_day").child(AppStateManager.shared.id).child("\(Date().fullDate)").childByAutoId().setValue(point) { (error, snapshot) in
+            self.stopLoading()
             if let err = error {
                 self.showErrorWith(message: err.localizedDescription)
             }else{

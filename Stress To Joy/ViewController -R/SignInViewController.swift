@@ -35,9 +35,11 @@ class SignInViewController: BaseViewController {
     
     
     func signIn(email: String, password: String){
+        self.startLoading()
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let user = authResult?.user{
                 Database.database().reference().child("users").child(user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    self.stopLoading()
                     if let dict = snapshot.value as? [String:String] {
                         AppStateManager.shared.f_name =  dict["f_name"] ?? ""
                         AppStateManager.shared.l_name =  dict["l_name"] ?? ""
@@ -50,8 +52,10 @@ class SignInViewController: BaseViewController {
                 })
             }else if let err = error {
                 self.showErrorWith(message: err.localizedDescription)
+                self.stopLoading()
             }else{
                 self.showErrorWith(message: "Unknown error occured")
+                self.stopLoading()
             }
         }
     }

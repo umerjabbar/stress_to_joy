@@ -10,9 +10,9 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
 
     @IBOutlet weak var imageContainer: UIView!
     @IBOutlet weak var profileImg: UIImageView!

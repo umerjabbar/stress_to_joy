@@ -11,13 +11,13 @@ import Firebase
 
 class ProritiesViewController: BaseViewController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
     
     @IBOutlet weak var tableView: UITableView!
     
-    var items = [String]()
+    var items = [(String, [String])]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,17 +26,23 @@ class ProritiesViewController: BaseViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
+        self.startLoading()
         Database.database().reference().child("priorities_of_the_day").child(AppStateManager.shared.id).observe(.value) { (snapshot) in
-            if let dict = snapshot.value as? [String:String] {
-                self.items = dict.map({ (key,value) -> String in
-                    return value
+            self.stopLoading()
+            if let dict = snapshot.value as? [String:Any] {
+                self.items = dict.map({ (key,value) -> (String, [String]) in
+                    if let val = value as? [String:String]{
+                        let array = val.map({ (key2, value2) -> String in
+                            return value2
+                        })
+                        return (key, array)
+                    }
+                    return (key, [])
                 })
                 self.tableView.reloadData()
             }
         }
         
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -48,8 +54,12 @@ class ProritiesViewController: BaseViewController {
 
 extension ProritiesViewController : UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return self.items.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.items[section].1.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,10 +70,14 @@ extension ProritiesViewController : UITableViewDataSource {
 //        }
         
         if let label = cell.viewWithTag(11) as? UILabel {
-            label.text = self.items[indexPath.row]
+            label.text = self.items[indexPath.section].1[indexPath.row]
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.items[section].0
     }
     
 }

@@ -62,7 +62,7 @@ class SignupViewController: BaseViewController {
     }
     
     func signup(email: String, password: String){
-        
+        self.startLoading()
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let result = authResult {
                 Database.database().reference().child("users").child(result.user.uid).setValue([
@@ -71,12 +71,15 @@ class SignupViewController: BaseViewController {
                     "l_name": self.l_name,
                     "email": result.user.email ?? self.email,
                     ])
+                self.stopLoading()
                 self.showSuccessMessage(message: "Successfully created")
                 self.dismiss(animated: true, completion: nil)
             }else if let err = error {
                 self.showErrorWith(message: err.localizedDescription)
+                self.stopLoading()
             }else{
                 self.showErrorWith(message: "Unknown error occured")
+                self.stopLoading()
             }
         }
         

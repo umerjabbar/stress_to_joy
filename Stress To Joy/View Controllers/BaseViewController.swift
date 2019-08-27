@@ -10,6 +10,10 @@ import UIKit
 import Hero
 
 class BaseViewController: UIViewController {
+    
+        override var preferredStatusBarStyle: UIStatusBarStyle {
+            return .default
+        }
 
     override func viewDidLoad() {
         super.viewDidLoad()

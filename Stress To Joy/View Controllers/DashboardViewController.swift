@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class DashboardViewController: BaseViewController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -40,6 +41,17 @@ class DashboardViewController: BaseViewController {
         }
     }
     
+    @IBAction func exitButtonAction(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            self.showSuccessMessage(message: "Successfully logged out")
+            let vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+            (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = vc
+        } catch  {
+            self.showErrorWith(message: "Not able to logout")
+        }
+        
+    }
 }
 
 extension DashboardViewController : UICollectionViewDataSource {

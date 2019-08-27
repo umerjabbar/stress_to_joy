@@ -34,7 +34,9 @@ class ForgotViewController: BaseViewController {
     
     
     func forgotPassword(email: String){
+        self.startLoading()
         Auth.auth().sendPasswordReset(withEmail: self.email) { (error) in
+            self.stopLoading()
             if let err = error {
                 self.showErrorWith(message: err.localizedDescription)
             }else{

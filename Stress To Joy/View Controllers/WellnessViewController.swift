@@ -11,9 +11,9 @@ import Firebase
 
 class WellnessViewController: BaseViewController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
 
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -25,7 +25,7 @@ class WellnessViewController: BaseViewController {
         
         self.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .up), dismissing: .uncover(direction: .down))
 
-        Database.database().reference().child("mindful_exercise").child(AppStateManager.shared.id).observe(.value) { (snapshot) in
+        Database.database().reference().child("wellness").child(AppStateManager.shared.id).observe(.value) { (snapshot) in
             if let dict = snapshot.value as? [String:Any] {
                 if let isSleeping = dict["isSleeping"] as? Bool, isSleeping {
                     self.stopButton.isHidden = false
@@ -53,22 +53,16 @@ class WellnessViewController: BaseViewController {
     }
     
     @IBAction func startButtonAction(_ sender: Any) {
-        Database.database().reference().child("mindful_exercise").child(AppStateManager.shared.id).setValue([
-            "isSleeping": true,
-            "sleep": Date().shortTime,
-            "wake": self.wakeTimeLabel.text ?? "N/A"
-            ])
+        Database.database().reference().child("wellness").child(AppStateManager.shared.id).child("isSleeping").setValue(true)
+        Database.database().reference().child("wellness").child(AppStateManager.shared.id).child("sleep").setValue("\(Date().shortTime)")
         self.startButton.isHidden = true
         self.stopButton.isHidden = false
     }
     
     @IBAction func stopButtonAction(_ sender: Any) {
-        Database.database().reference().child("mindful_exercise").child(AppStateManager.shared.id).setValue([
-            "isSleeping": false,
-            "wake": Date().shortTime,
-            "sleep": self.sleepTimeLabel.text ?? "N/A"
-            ])
-        Database.database().reference().child("mindful_exercise_history").child(AppStateManager.shared.id).childByAutoId().setValue([
+        Database.database().reference().child("wellness").child(AppStateManager.shared.id).child("isSleeping").setValue(false)
+        Database.database().reference().child("wellness").child(AppStateManager.shared.id).child("wake").setValue("\(Date().shortTime)")
+        Database.database().reference().child("wellness_history").child(AppStateManager.shared.id).childByAutoId().setValue([
             "wake": Date().shortTime,
             "sleep": self.sleepTimeLabel.text ?? "N/A",
             "wakeDate": Date().fullDate
