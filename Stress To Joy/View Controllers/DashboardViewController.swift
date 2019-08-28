@@ -19,7 +19,7 @@ class DashboardViewController: BaseViewController {
     
     var items = [
         ("Priorities of the Day", #imageLiteral(resourceName: "travel")),
-        ("3-Word Gratitude", #imageLiteral(resourceName: "typewriter")),
+        ("Today, I am grateful for", #imageLiteral(resourceName: "typewriter")),
         ("Wellness", #imageLiteral(resourceName: "home_dribbble_3")),
         ("Mindful Exercise", #imageLiteral(resourceName: "mindfull")),
         ("Blogs", #imageLiteral(resourceName: "dribble4-1")),

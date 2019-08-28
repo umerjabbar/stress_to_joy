@@ -50,7 +50,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthtitleLabel"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StressToJoy" translatesAutoresizingMaskIntoConstraints="NO" id="nmQ-Pj-11e">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joyicon" translatesAutoresizingMaskIntoConstraints="NO" id="nmQ-Pj-11e">
                                 <rect key="frame" x="0.0" y="60" width="320" height="91"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nmQ-Pj-11e" secondAttribute="height" multiplier="320:91" id="axD-ua-Vau"/>
@@ -249,7 +249,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthtitleLabel"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StressToJoy" translatesAutoresizingMaskIntoConstraints="NO" id="mO6-AK-sOR">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joyicon" translatesAutoresizingMaskIntoConstraints="NO" id="mO6-AK-sOR">
                                                 <rect key="frame" x="0.0" y="60" width="320" height="91"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="mO6-AK-sOR" secondAttribute="height" multiplier="320:91" id="wq9-UV-jCj"/>
@@ -471,7 +471,7 @@
                                     <action selector="buttonAction:" destination="Sen-xg-a1U" eventType="touchUpInside" id="ffk-kp-OyZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StressToJoy" translatesAutoresizingMaskIntoConstraints="NO" id="Z05-Ni-mPa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joyicon" translatesAutoresizingMaskIntoConstraints="NO" id="Z05-Ni-mPa">
                                 <rect key="frame" x="0.0" y="60" width="320" height="91"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Z05-Ni-mPa" secondAttribute="height" multiplier="320:91" id="GsC-m7-K6h"/>
@@ -549,9 +549,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="StressToJoy" width="283" height="242"/>
         <image name="backgroundImage" width="166.5" height="250"/>
         <image name="icons8-left_4" width="24" height="24"/>
+        <image name="joyicon" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="v7c-9m-9t8"/>

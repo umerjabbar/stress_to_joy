@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="ABEAKRG.TTF">
+            <string>AbeatbyKai</string>
+        </array>
         <array key="Mostardesign - Sofia Pro Bold.otf">
             <string>SofiaProBold</string>
         </array>
@@ -20,9 +23,6 @@
         </array>
         <array key="Mostardesign - Sofia Pro Semi Bold.otf">
             <string>SofiaProSemiBold</string>
-        </array>
-        <array key="abeatbyKaiRegular.otf">
-            <string>AbeatbyKai</string>
         </array>
     </customFonts>
     <scenes>
@@ -522,11 +522,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udU-Sw-imR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3-Word Gratitude" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="VHq-s0-fb3">
-                                        <rect key="frame" x="20" y="50" width="240" height="90"/>
-                                        <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, I am grateful for" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="VHq-s0-fb3">
+                                        <rect key="frame" x="20" y="50" width="240" height="80"/>
+                                        <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="40"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -557,7 +557,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="35" sectionFooterHeight="35" translatesAutoresizingMaskIntoConstraints="NO" id="XuV-jV-Uc7">
-                                <rect key="frame" x="0.0" y="148" width="320" height="420"/>
+                                <rect key="frame" x="0.0" y="138" width="320" height="430"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="Us9-mm-Lo1">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
@@ -877,11 +877,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtV-01-EgX">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add 3-Words" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="g55-xD-Heb">
-                                        <rect key="frame" x="20" y="50" width="240" height="90"/>
-                                        <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, I am grateful for" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="g55-xD-Heb">
+                                        <rect key="frame" x="20" y="50" width="240" height="80"/>
+                                        <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="40"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -912,33 +912,33 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Point 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yd9-6G-g6A">
-                                <rect key="frame" x="20" y="168" width="280" height="40.5"/>
+                                <rect key="frame" x="20" y="158" width="280" height="40.5"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gff-QA-gaE">
-                                <rect key="frame" x="20" y="210.5" width="280" height="1"/>
+                                <rect key="frame" x="20" y="200.5" width="280" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="1Hr-cX-CC7"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Point 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jwr-R5-5e4">
-                                <rect key="frame" x="20" y="219.5" width="280" height="40.5"/>
+                                <rect key="frame" x="20" y="209.5" width="280" height="40.5"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-rr-1cT">
-                                <rect key="frame" x="20" y="262" width="280" height="1"/>
+                                <rect key="frame" x="20" y="252" width="280" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="b73-lM-zJ2"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-4h-lWJ">
-                                <rect key="frame" x="20" y="344.5" width="280" height="39.5"/>
+                                <rect key="frame" x="20" y="334.5" width="280" height="39.5"/>
                                 <color key="backgroundColor" red="0.72941176470000002" green="0.29803921570000003" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="17"/>
                                 <state key="normal" title="Done">
@@ -967,13 +967,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Point 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eer-iR-Cc9">
-                                <rect key="frame" x="20" y="271" width="280" height="40.5"/>
+                                <rect key="frame" x="20" y="261" width="280" height="40.5"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPx-Yt-IK4">
-                                <rect key="frame" x="22" y="313.5" width="280" height="1"/>
+                                <rect key="frame" x="22" y="303.5" width="280" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="kYq-md-j91"/>
