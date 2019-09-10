@@ -22,5 +22,7 @@ target 'Stress To Joy' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'Firebase/Analytics'
+  
+#  pod 'RealmSwift'
 
 end
