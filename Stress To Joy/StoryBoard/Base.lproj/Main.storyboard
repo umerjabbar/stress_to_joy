@@ -4,16 +4,17 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Mostardesign - Sofia Pro Medium.otf">
+        <array key="Sofia Pro Medium.otf">
             <string>SofiaProMedium</string>
         </array>
-        <array key="abeatbyKaiRegular.otf">
-            <string>AbeatbyKai</string>
+        <array key="Sofia Pro Regular.otf">
+            <string>SofiaProRegular</string>
         </array>
     </customFonts>
     <scenes>
@@ -31,7 +32,7 @@
                                     <constraint firstAttribute="width" secondItem="tSj-m9-Pa3" secondAttribute="height" multiplier="256:37" id="rix-jE-wvt"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                             </textField>
                             <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJo-kk-Gfj">
@@ -162,7 +163,7 @@
                                                     <constraint firstAttribute="width" secondItem="bDS-tH-vli" secondAttribute="height" multiplier="256:37" id="mKX-fS-4Br"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES" textContentType="honorifix-prefix"/>
                                             </textField>
                                             <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhy-We-4Og">
@@ -175,7 +176,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6j-oN-V8N">
                                                 <rect key="frame" x="32" y="274" width="256" height="37"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES" textContentType="honorifix-suffix"/>
                                             </textField>
                                             <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="my7-sy-8Mg">
@@ -195,7 +196,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fr-Br-JVr">
                                                 <rect key="frame" x="32" y="367" width="256" height="37"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXQ-wb-kvx">
@@ -258,7 +259,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1tC-zh-GIc">
                                                 <rect key="frame" x="32" y="319" width="256" height="37"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                             </textField>
                                         </subviews>
@@ -406,7 +407,7 @@
                                     <constraint firstAttribute="width" secondItem="kqZ-44-tJQ" secondAttribute="height" multiplier="256:37" id="Shc-Je-cIb"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                             </textField>
                             <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHe-PT-AIw">
@@ -419,7 +420,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BIh-Tt-c3x">
                                 <rect key="frame" x="32" y="275.5" width="256" height="37"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEl-fN-YSa">
@@ -430,8 +431,8 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZG-Nt-fhf">
-                                <rect key="frame" x="180" y="329.5" width="108" height="26"/>
-                                <fontDescription key="fontDescription" name="AbeatbyKai" family="abeatbyKai" pointSize="13"/>
+                                <rect key="frame" x="188" y="329.5" width="100" height="25"/>
+                                <fontDescription key="fontDescription" name="SofiaProMedium" family="Sofia Pro" pointSize="13"/>
                                 <state key="normal" title="Forgot Pasword?">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -440,7 +441,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-aU-fbg">
-                                <rect key="frame" x="32" y="371.5" width="256" height="42"/>
+                                <rect key="frame" x="32" y="370.5" width="256" height="42"/>
                                 <color key="backgroundColor" red="0.72941176470588232" green="0.29803921568627451" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2eC-aU-fbg" secondAttribute="height" multiplier="128:21" id="zSG-lN-Pp5"/>
@@ -481,19 +482,19 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4A-A9-lAh">
-                                <rect key="frame" x="30" y="508" width="260" height="30"/>
+                                <rect key="frame" x="30" y="512" width="260" height="26"/>
                                 <state key="normal" title="Don't have an account? Signup">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Don't have an account? ">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" size="14" name="SofiaProMedium"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="Signup">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" size="14" name="SofiaProMedium"/>
                                                 <integer key="NSUnderline" value="1"/>
                                             </attributes>
                                         </fragment>

@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D70ADC723281A5100E75B99 /* Sofia Pro Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADB723281A4F00E75B99 /* Sofia Pro Medium Italic.otf */; };
+		0D70ADC823281A5100E75B99 /* Sofia Pro Semi Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADB823281A5000E75B99 /* Sofia Pro Semi Bold Italic.otf */; };
+		0D70ADC923281A5100E75B99 /* Sofia Pro Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADB923281A5000E75B99 /* Sofia Pro Regular Italic.otf */; };
+		0D70ADCA23281A5100E75B99 /* Sofia Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADBA23281A5000E75B99 /* Sofia Pro Regular.otf */; };
+		0D70ADCB23281A5100E75B99 /* Sofia Pro ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADBB23281A5000E75B99 /* Sofia Pro ExtraLight.otf */; };
+		0D70ADCC23281A5100E75B99 /* Sofia Pro Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADBC23281A5000E75B99 /* Sofia Pro Semi Bold.otf */; };
+		0D70ADCD23281A5100E75B99 /* Sofia Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADBD23281A5000E75B99 /* Sofia Pro Light.otf */; };
+		0D70ADCE23281A5100E75B99 /* Sofia Pro UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADBE23281A5000E75B99 /* Sofia Pro UltraLight.otf */; };
+		0D70ADCF23281A5100E75B99 /* Sofia Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADBF23281A5000E75B99 /* Sofia Pro Black Italic.otf */; };
+		0D70ADD023281A5100E75B99 /* Sofia Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADC023281A5000E75B99 /* Sofia Pro Medium.otf */; };
+		0D70ADD123281A5100E75B99 /* Sofia Pro ExtraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADC123281A5000E75B99 /* Sofia Pro ExtraLight Italic.otf */; };
+		0D70ADD223281A5100E75B99 /* Sofia Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADC223281A5000E75B99 /* Sofia Pro Bold.otf */; };
+		0D70ADD323281A5100E75B99 /* Sofia Pro Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADC323281A5000E75B99 /* Sofia Pro Light Italic.otf */; };
+		0D70ADD423281A5100E75B99 /* Sofia Pro Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADC423281A5100E75B99 /* Sofia Pro Bold Italic.otf */; };
+		0D70ADD523281A5100E75B99 /* Sofia Pro UltraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADC523281A5100E75B99 /* Sofia Pro UltraLight Italic.otf */; };
+		0D70ADD623281A5100E75B99 /* Sofia Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D70ADC623281A5100E75B99 /* Sofia Pro Black.otf */; };
 		247CED0AB36118BA9B83848F /* Pods_Stress_To_Joy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695AE2DCA34CB1AE99C65043 /* Pods_Stress_To_Joy.framework */; };
 		A5D245992310693E009387F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5D245982310693E009387F2 /* GoogleService-Info.plist */; };
 		A5D2459B231195C6009387F2 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2459A231195C6009387F2 /* AppStateManager.swift */; };
 		A5D2459D2311AD31009387F2 /* Date_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2459C2311AD31009387F2 /* Date_Extension.swift */; };
-		C86AF87B22DA2BBE00915525 /* DrawableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AF87A22DA2BBE00915525 /* DrawableViewController.swift */; };
-		C87BA6F722E223F2004821A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87BA6F622E223F2004821A4 /* HomeViewController.swift */; };
-		C87BA6F922E2264B004821A4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87BA6F822E2264B004821A4 /* MainTabBarController.swift */; };
 		C87BA6FB22E22BD3004821A4 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87BA6FA22E22BD3004821A4 /* Extentions.swift */; };
 		C884E39D22E22FD500F178AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884E39C22E22FD500F178AA /* ProfileViewController.swift */; };
-		C884E39F22E319C400F178AA /* PriorityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884E39E22E319C400F178AA /* PriorityListViewController.swift */; };
-		C884E3A122E31A6100F178AA /* SetPrioritiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884E3A022E31A6100F178AA /* SetPrioritiesViewController.swift */; };
-		C884E3A322E31A7300F178AA /* ThrreeWordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884E3A222E31A7300F178AA /* ThrreeWordListViewController.swift */; };
-		C884E3A522E31A8200F178AA /* WriteThreeWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884E3A422E31A8200F178AA /* WriteThreeWordViewController.swift */; };
 		C8920D2A22D9D49700190B09 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8920D2922D9D49700190B09 /* SignInViewController.swift */; };
 		C8920D2C22D9D4A200190B09 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8920D2B22D9D4A200190B09 /* SignupViewController.swift */; };
 		C8920D2E22D9D4AD00190B09 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8920D2D22D9D4AD00190B09 /* ForgotViewController.swift */; };
@@ -29,47 +38,8 @@
 		C8AF114122D9044200FFBA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF113F22D9044200FFBA4F /* Main.storyboard */; };
 		C8AF114322D9044500FFBA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8AF114222D9044500FFBA4F /* Assets.xcassets */; };
 		C8AF114622D9044500FFBA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF114422D9044500FFBA4F /* LaunchScreen.storyboard */; };
-		C8AF116722D9063D00FFBA4F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF114F22D9063D00FFBA4F /* Roboto-Medium.ttf */; };
-		C8AF116822D9063D00FFBA4F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115022D9063D00FFBA4F /* Roboto-Light.ttf */; };
-		C8AF116922D9063D00FFBA4F /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115122D9063D00FFBA4F /* RobotoCondensed-Bold.ttf */; };
-		C8AF116A22D9063D00FFBA4F /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115222D9063D00FFBA4F /* RobotoCondensed-Light.ttf */; };
-		C8AF116B22D9063D00FFBA4F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115322D9063D00FFBA4F /* Roboto-Regular.ttf */; };
-		C8AF116C22D9063D00FFBA4F /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115422D9063D00FFBA4F /* Roboto-MediumItalic.ttf */; };
-		C8AF116D22D9063D00FFBA4F /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115522D9063D00FFBA4F /* RobotoCondensed-Italic.ttf */; };
-		C8AF116E22D9063D00FFBA4F /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115622D9063D00FFBA4F /* RobotoCondensed-BoldItalic.ttf */; };
-		C8AF116F22D9063D00FFBA4F /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115722D9063D00FFBA4F /* Apache License.txt */; };
-		C8AF117022D9063D00FFBA4F /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115822D9063D00FFBA4F /* RobotoCondensed-LightItalic.ttf */; };
-		C8AF117122D9063D00FFBA4F /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115922D9063D00FFBA4F /* Roboto-ThinItalic.ttf */; };
-		C8AF117222D9063D00FFBA4F /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115A22D9063D00FFBA4F /* RobotoCondensed-Regular.ttf */; };
-		C8AF117322D9063D00FFBA4F /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115B22D9063D00FFBA4F /* Roboto-BoldItalic.ttf */; };
-		C8AF117422D9063D00FFBA4F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115C22D9063D00FFBA4F /* Roboto-LightItalic.ttf */; };
-		C8AF117522D9063D00FFBA4F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115D22D9063D00FFBA4F /* Roboto-Italic.ttf */; };
-		C8AF117622D9063D00FFBA4F /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115E22D9063D00FFBA4F /* Roboto-BlackItalic.ttf */; };
-		C8AF117722D9063D00FFBA4F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF115F22D9063D00FFBA4F /* Roboto-Bold.ttf */; };
-		C8AF117822D9063D00FFBA4F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF116022D9063D00FFBA4F /* Roboto-Thin.ttf */; };
-		C8AF117922D9063D00FFBA4F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF116122D9063D00FFBA4F /* Roboto-Black.ttf */; };
-		C8AF117A22D9063D00FFBA4F /* Aller_Lt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF116222D9063D00FFBA4F /* Aller_Lt.ttf */; };
-		C8AF117B22D9063D00FFBA4F /* abeatbykai_art_lg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8AF116422D9063D00FFBA4F /* abeatbykai_art_lg.jpg */; };
-		C8AF117C22D9063D00FFBA4F /* ABEAKRG.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C8AF116522D9063D00FFBA4F /* ABEAKRG.TTF */; };
-		C8AF117D22D9063D00FFBA4F /* abeatbyKaiRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8AF116622D9063D00FFBA4F /* abeatbyKaiRegular.otf */; };
 		F723F87122EDA8E6006A7E63 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F87022EDA8E6006A7E63 /* BaseNavigationController.swift */; };
 		F723F87322EDAA87006A7E63 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F87222EDAA87006A7E63 /* DashboardViewController.swift */; };
-		F723F88522EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87522EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold Italic.otf */; };
-		F723F88622EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87622EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight.otf */; };
-		F723F88722EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87722EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular Italic.otf */; };
-		F723F88822EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87822EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black.otf */; };
-		F723F88922EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87922EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium.otf */; };
-		F723F88A22EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87A22EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight.otf */; };
-		F723F88B22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87B22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black Italic.otf */; };
-		F723F88C22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87C22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold.otf */; };
-		F723F88D22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87D22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold.otf */; };
-		F723F88E22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87E22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light.otf */; };
-		F723F88F22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F87F22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular.otf */; };
-		F723F89022EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F88022EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight Italic.otf */; };
-		F723F89122EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F88122EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold Italic.otf */; };
-		F723F89222EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F88222EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium Italic.otf */; };
-		F723F89322EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F88322EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light Italic.otf */; };
-		F723F89422EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F723F88422EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight Italic.otf */; };
 		F723F89822EDC55D006A7E63 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F89722EDC55D006A7E63 /* JournalViewController.swift */; };
 		F723F89A22EDD988006A7E63 /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F89922EDD988006A7E63 /* AddJournalViewController.swift */; };
 		F723F89C22EDE11D006A7E63 /* MindfulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723F89B22EDE11D006A7E63 /* MindfulViewController.swift */; };
@@ -93,73 +63,44 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D70ADB723281A4F00E75B99 /* Sofia Pro Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Medium Italic.otf"; sourceTree = "<group>"; };
+		0D70ADB823281A5000E75B99 /* Sofia Pro Semi Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Semi Bold Italic.otf"; sourceTree = "<group>"; };
+		0D70ADB923281A5000E75B99 /* Sofia Pro Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Regular Italic.otf"; sourceTree = "<group>"; };
+		0D70ADBA23281A5000E75B99 /* Sofia Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Regular.otf"; sourceTree = "<group>"; };
+		0D70ADBB23281A5000E75B99 /* Sofia Pro ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro ExtraLight.otf"; sourceTree = "<group>"; };
+		0D70ADBC23281A5000E75B99 /* Sofia Pro Semi Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Semi Bold.otf"; sourceTree = "<group>"; };
+		0D70ADBD23281A5000E75B99 /* Sofia Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Light.otf"; sourceTree = "<group>"; };
+		0D70ADBE23281A5000E75B99 /* Sofia Pro UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro UltraLight.otf"; sourceTree = "<group>"; };
+		0D70ADBF23281A5000E75B99 /* Sofia Pro Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Black Italic.otf"; sourceTree = "<group>"; };
+		0D70ADC023281A5000E75B99 /* Sofia Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Medium.otf"; sourceTree = "<group>"; };
+		0D70ADC123281A5000E75B99 /* Sofia Pro ExtraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro ExtraLight Italic.otf"; sourceTree = "<group>"; };
+		0D70ADC223281A5000E75B99 /* Sofia Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Bold.otf"; sourceTree = "<group>"; };
+		0D70ADC323281A5000E75B99 /* Sofia Pro Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Light Italic.otf"; sourceTree = "<group>"; };
+		0D70ADC423281A5100E75B99 /* Sofia Pro Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Bold Italic.otf"; sourceTree = "<group>"; };
+		0D70ADC523281A5100E75B99 /* Sofia Pro UltraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro UltraLight Italic.otf"; sourceTree = "<group>"; };
+		0D70ADC623281A5100E75B99 /* Sofia Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Black.otf"; sourceTree = "<group>"; };
+		0D70ADD72328BDDA00E75B99 /* Stress To Joy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stress To Joy.entitlements"; sourceTree = "<group>"; };
 		65AFEE0A383936F736D9C64B /* Pods-Stress To Joy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress To Joy.debug.xcconfig"; path = "Target Support Files/Pods-Stress To Joy/Pods-Stress To Joy.debug.xcconfig"; sourceTree = "<group>"; };
 		695AE2DCA34CB1AE99C65043 /* Pods_Stress_To_Joy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stress_To_Joy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D245982310693E009387F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5D2459A231195C6009387F2 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		A5D2459C2311AD31009387F2 /* Date_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_Extension.swift; sourceTree = "<group>"; };
 		B9F2AF0BEFB5411F8ED9A8D0 /* Pods-Stress To Joy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress To Joy.release.xcconfig"; path = "Target Support Files/Pods-Stress To Joy/Pods-Stress To Joy.release.xcconfig"; sourceTree = "<group>"; };
-		C86AF87A22DA2BBE00915525 /* DrawableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawableViewController.swift; sourceTree = "<group>"; };
-		C87BA6F622E223F2004821A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C87BA6F822E2264B004821A4 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C87BA6FA22E22BD3004821A4 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		C884E39C22E22FD500F178AA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C884E39E22E319C400F178AA /* PriorityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityListViewController.swift; sourceTree = "<group>"; };
-		C884E3A022E31A6100F178AA /* SetPrioritiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPrioritiesViewController.swift; sourceTree = "<group>"; };
-		C884E3A222E31A7300F178AA /* ThrreeWordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrreeWordListViewController.swift; sourceTree = "<group>"; };
-		C884E3A422E31A8200F178AA /* WriteThreeWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteThreeWordViewController.swift; sourceTree = "<group>"; };
 		C8920D2922D9D49700190B09 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C8920D2B22D9D4A200190B09 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C8920D2D22D9D4AD00190B09 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
 		C8920D2F22D9D9A800190B09 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C8AF113822D9044200FFBA4F /* Stress To Joy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stress To Joy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AF113B22D9044200FFBA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8AF113D22D9044200FFBA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8AF113D22D9044200FFBA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../ViewController -R/ViewController.swift"; sourceTree = "<group>"; };
 		C8AF114022D9044200FFBA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8AF114222D9044500FFBA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8AF114522D9044500FFBA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8AF114722D9044500FFBA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8AF114F22D9063D00FFBA4F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		C8AF115022D9063D00FFBA4F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
-		C8AF115122D9063D00FFBA4F /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
-		C8AF115222D9063D00FFBA4F /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
-		C8AF115322D9063D00FFBA4F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		C8AF115422D9063D00FFBA4F /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
-		C8AF115522D9063D00FFBA4F /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
-		C8AF115622D9063D00FFBA4F /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
-		C8AF115722D9063D00FFBA4F /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
-		C8AF115822D9063D00FFBA4F /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
-		C8AF115922D9063D00FFBA4F /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
-		C8AF115A22D9063D00FFBA4F /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
-		C8AF115B22D9063D00FFBA4F /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
-		C8AF115C22D9063D00FFBA4F /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
-		C8AF115D22D9063D00FFBA4F /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
-		C8AF115E22D9063D00FFBA4F /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
-		C8AF115F22D9063D00FFBA4F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		C8AF116022D9063D00FFBA4F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		C8AF116122D9063D00FFBA4F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
-		C8AF116222D9063D00FFBA4F /* Aller_Lt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Lt.ttf; sourceTree = "<group>"; };
-		C8AF116422D9063D00FFBA4F /* abeatbykai_art_lg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abeatbykai_art_lg.jpg; sourceTree = "<group>"; };
-		C8AF116522D9063D00FFBA4F /* ABEAKRG.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ABEAKRG.TTF; sourceTree = "<group>"; };
-		C8AF116622D9063D00FFBA4F /* abeatbyKaiRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abeatbyKaiRegular.otf; sourceTree = "<group>"; };
 		F723F87022EDA8E6006A7E63 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F723F87222EDAA87006A7E63 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		F723F87522EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Bold Italic.otf"; sourceTree = "<group>"; };
-		F723F87622EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro UltraLight.otf"; sourceTree = "<group>"; };
-		F723F87722EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Regular Italic.otf"; sourceTree = "<group>"; };
-		F723F87822EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Black.otf"; sourceTree = "<group>"; };
-		F723F87922EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Medium.otf"; sourceTree = "<group>"; };
-		F723F87A22EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro ExtraLight.otf"; sourceTree = "<group>"; };
-		F723F87B22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Black Italic.otf"; sourceTree = "<group>"; };
-		F723F87C22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Bold.otf"; sourceTree = "<group>"; };
-		F723F87D22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Semi Bold.otf"; sourceTree = "<group>"; };
-		F723F87E22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Light.otf"; sourceTree = "<group>"; };
-		F723F87F22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Regular.otf"; sourceTree = "<group>"; };
-		F723F88022EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro UltraLight Italic.otf"; sourceTree = "<group>"; };
-		F723F88122EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Semi Bold Italic.otf"; sourceTree = "<group>"; };
-		F723F88222EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Medium Italic.otf"; sourceTree = "<group>"; };
-		F723F88322EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro Light Italic.otf"; sourceTree = "<group>"; };
-		F723F88422EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mostardesign - Sofia Pro ExtraLight Italic.otf"; sourceTree = "<group>"; };
 		F723F89722EDC55D006A7E63 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		F723F89922EDD988006A7E63 /* AddJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewController.swift; sourceTree = "<group>"; };
 		F723F89B22EDE11D006A7E63 /* MindfulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +183,7 @@
 		C8AF113A22D9044200FFBA4F /* Stress To Joy */ = {
 			isa = PBXGroup;
 			children = (
+				0D70ADD72328BDDA00E75B99 /* Stress To Joy.entitlements */,
 				F7B47072230F189A009907E6 /* New Group */,
 				F7FC721422ECF030000C533C /* Extensions */,
 				C8AF114D22D9063D00FFBA4F /* Resources */,
@@ -261,68 +203,29 @@
 			isa = PBXGroup;
 			children = (
 				F723F87422EDAAAD006A7E63 /* sofiapro */,
-				C8AF114E22D9063D00FFBA4F /* roboto-2 */,
-				C8AF116222D9063D00FFBA4F /* Aller_Lt.ttf */,
-				C8AF116322D9063D00FFBA4F /* abeatbykai */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		C8AF114E22D9063D00FFBA4F /* roboto-2 */ = {
-			isa = PBXGroup;
-			children = (
-				C8AF114F22D9063D00FFBA4F /* Roboto-Medium.ttf */,
-				C8AF115022D9063D00FFBA4F /* Roboto-Light.ttf */,
-				C8AF115122D9063D00FFBA4F /* RobotoCondensed-Bold.ttf */,
-				C8AF115222D9063D00FFBA4F /* RobotoCondensed-Light.ttf */,
-				C8AF115322D9063D00FFBA4F /* Roboto-Regular.ttf */,
-				C8AF115422D9063D00FFBA4F /* Roboto-MediumItalic.ttf */,
-				C8AF115522D9063D00FFBA4F /* RobotoCondensed-Italic.ttf */,
-				C8AF115622D9063D00FFBA4F /* RobotoCondensed-BoldItalic.ttf */,
-				C8AF115722D9063D00FFBA4F /* Apache License.txt */,
-				C8AF115822D9063D00FFBA4F /* RobotoCondensed-LightItalic.ttf */,
-				C8AF115922D9063D00FFBA4F /* Roboto-ThinItalic.ttf */,
-				C8AF115A22D9063D00FFBA4F /* RobotoCondensed-Regular.ttf */,
-				C8AF115B22D9063D00FFBA4F /* Roboto-BoldItalic.ttf */,
-				C8AF115C22D9063D00FFBA4F /* Roboto-LightItalic.ttf */,
-				C8AF115D22D9063D00FFBA4F /* Roboto-Italic.ttf */,
-				C8AF115E22D9063D00FFBA4F /* Roboto-BlackItalic.ttf */,
-				C8AF115F22D9063D00FFBA4F /* Roboto-Bold.ttf */,
-				C8AF116022D9063D00FFBA4F /* Roboto-Thin.ttf */,
-				C8AF116122D9063D00FFBA4F /* Roboto-Black.ttf */,
-			);
-			path = "roboto-2";
-			sourceTree = "<group>";
-		};
-		C8AF116322D9063D00FFBA4F /* abeatbykai */ = {
-			isa = PBXGroup;
-			children = (
-				C8AF116422D9063D00FFBA4F /* abeatbykai_art_lg.jpg */,
-				C8AF116522D9063D00FFBA4F /* ABEAKRG.TTF */,
-				C8AF116622D9063D00FFBA4F /* abeatbyKaiRegular.otf */,
-			);
-			path = abeatbykai;
 			sourceTree = "<group>";
 		};
 		F723F87422EDAAAD006A7E63 /* sofiapro */ = {
 			isa = PBXGroup;
 			children = (
-				F723F87522EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold Italic.otf */,
-				F723F87622EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight.otf */,
-				F723F87722EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular Italic.otf */,
-				F723F87822EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black.otf */,
-				F723F87922EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium.otf */,
-				F723F87A22EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight.otf */,
-				F723F87B22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black Italic.otf */,
-				F723F87C22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold.otf */,
-				F723F87D22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold.otf */,
-				F723F87E22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light.otf */,
-				F723F87F22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular.otf */,
-				F723F88022EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight Italic.otf */,
-				F723F88122EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold Italic.otf */,
-				F723F88222EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium Italic.otf */,
-				F723F88322EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light Italic.otf */,
-				F723F88422EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight Italic.otf */,
+				0D70ADBF23281A5000E75B99 /* Sofia Pro Black Italic.otf */,
+				0D70ADC623281A5100E75B99 /* Sofia Pro Black.otf */,
+				0D70ADC423281A5100E75B99 /* Sofia Pro Bold Italic.otf */,
+				0D70ADC223281A5000E75B99 /* Sofia Pro Bold.otf */,
+				0D70ADC123281A5000E75B99 /* Sofia Pro ExtraLight Italic.otf */,
+				0D70ADBB23281A5000E75B99 /* Sofia Pro ExtraLight.otf */,
+				0D70ADC323281A5000E75B99 /* Sofia Pro Light Italic.otf */,
+				0D70ADBD23281A5000E75B99 /* Sofia Pro Light.otf */,
+				0D70ADB723281A4F00E75B99 /* Sofia Pro Medium Italic.otf */,
+				0D70ADC023281A5000E75B99 /* Sofia Pro Medium.otf */,
+				0D70ADB923281A5000E75B99 /* Sofia Pro Regular Italic.otf */,
+				0D70ADBA23281A5000E75B99 /* Sofia Pro Regular.otf */,
+				0D70ADB823281A5000E75B99 /* Sofia Pro Semi Bold Italic.otf */,
+				0D70ADBC23281A5000E75B99 /* Sofia Pro Semi Bold.otf */,
+				0D70ADC523281A5100E75B99 /* Sofia Pro UltraLight Italic.otf */,
+				0D70ADBE23281A5000E75B99 /* Sofia Pro UltraLight.otf */,
 			);
 			path = sofiapro;
 			sourceTree = "<group>";
@@ -330,18 +233,10 @@
 		F723F89522EDAAB7006A7E63 /* ViewController -R */ = {
 			isa = PBXGroup;
 			children = (
-				C87BA6F622E223F2004821A4 /* HomeViewController.swift */,
 				C8920D2922D9D49700190B09 /* SignInViewController.swift */,
 				C8920D2B22D9D4A200190B09 /* SignupViewController.swift */,
 				C8920D2D22D9D4AD00190B09 /* ForgotViewController.swift */,
-				C87BA6F822E2264B004821A4 /* MainTabBarController.swift */,
 				C87BA6FA22E22BD3004821A4 /* Extentions.swift */,
-				C8AF113D22D9044200FFBA4F /* ViewController.swift */,
-				C884E39E22E319C400F178AA /* PriorityListViewController.swift */,
-				C884E3A022E31A6100F178AA /* SetPrioritiesViewController.swift */,
-				C884E3A222E31A7300F178AA /* ThrreeWordListViewController.swift */,
-				C884E3A422E31A8200F178AA /* WriteThreeWordViewController.swift */,
-				C86AF87A22DA2BBE00915525 /* DrawableViewController.swift */,
 			);
 			path = "ViewController -R";
 			sourceTree = "<group>";
@@ -350,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				F7FC722B22ECF30A000C533C /* BaseViewController.swift */,
+				C8AF113D22D9044200FFBA4F /* ViewController.swift */,
 				F723F87222EDAA87006A7E63 /* DashboardViewController.swift */,
 				F723F87022EDA8E6006A7E63 /* BaseNavigationController.swift */,
 				F723F89722EDC55D006A7E63 /* JournalViewController.swift */,
@@ -425,6 +321,11 @@
 				TargetAttributes = {
 					C8AF113722D9044200FFBA4F = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -451,50 +352,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F723F88D22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold.otf in Resources */,
-				C8AF116922D9063D00FFBA4F /* RobotoCondensed-Bold.ttf in Resources */,
-				C8AF117A22D9063D00FFBA4F /* Aller_Lt.ttf in Resources */,
-				C8AF117522D9063D00FFBA4F /* Roboto-Italic.ttf in Resources */,
-				C8AF117722D9063D00FFBA4F /* Roboto-Bold.ttf in Resources */,
-				F723F88E22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light.otf in Resources */,
+				0D70ADC723281A5100E75B99 /* Sofia Pro Medium Italic.otf in Resources */,
+				0D70ADC823281A5100E75B99 /* Sofia Pro Semi Bold Italic.otf in Resources */,
+				0D70ADD623281A5100E75B99 /* Sofia Pro Black.otf in Resources */,
+				0D70ADD223281A5100E75B99 /* Sofia Pro Bold.otf in Resources */,
+				0D70ADD023281A5100E75B99 /* Sofia Pro Medium.otf in Resources */,
+				0D70ADCA23281A5100E75B99 /* Sofia Pro Regular.otf in Resources */,
 				A5D245992310693E009387F2 /* GoogleService-Info.plist in Resources */,
-				C8AF116F22D9063D00FFBA4F /* Apache License.txt in Resources */,
-				C8AF116722D9063D00FFBA4F /* Roboto-Medium.ttf in Resources */,
-				F723F88A22EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight.otf in Resources */,
-				F723F89122EDAAAD006A7E63 /* Mostardesign - Sofia Pro Semi Bold Italic.otf in Resources */,
-				C8AF117922D9063D00FFBA4F /* Roboto-Black.ttf in Resources */,
-				C8AF117222D9063D00FFBA4F /* RobotoCondensed-Regular.ttf in Resources */,
-				C8AF116B22D9063D00FFBA4F /* Roboto-Regular.ttf in Resources */,
-				C8AF117C22D9063D00FFBA4F /* ABEAKRG.TTF in Resources */,
-				F723F88522EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold Italic.otf in Resources */,
-				C8AF117022D9063D00FFBA4F /* RobotoCondensed-LightItalic.ttf in Resources */,
 				C8AF114622D9044500FFBA4F /* LaunchScreen.storyboard in Resources */,
+				0D70ADD523281A5100E75B99 /* Sofia Pro UltraLight Italic.otf in Resources */,
 				C8920D3022D9D9A800190B09 /* Home.storyboard in Resources */,
-				C8AF117622D9063D00FFBA4F /* Roboto-BlackItalic.ttf in Resources */,
-				C8AF116822D9063D00FFBA4F /* Roboto-Light.ttf in Resources */,
-				F723F88722EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular Italic.otf in Resources */,
-				F723F89222EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium Italic.otf in Resources */,
-				C8AF116A22D9063D00FFBA4F /* RobotoCondensed-Light.ttf in Resources */,
-				F723F89022EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight Italic.otf in Resources */,
+				0D70ADD323281A5100E75B99 /* Sofia Pro Light Italic.otf in Resources */,
+				0D70ADCC23281A5100E75B99 /* Sofia Pro Semi Bold.otf in Resources */,
+				0D70ADCE23281A5100E75B99 /* Sofia Pro UltraLight.otf in Resources */,
+				0D70ADCB23281A5100E75B99 /* Sofia Pro ExtraLight.otf in Resources */,
 				C8AF114322D9044500FFBA4F /* Assets.xcassets in Resources */,
-				F723F88922EDAAAD006A7E63 /* Mostardesign - Sofia Pro Medium.otf in Resources */,
-				C8AF117322D9063D00FFBA4F /* Roboto-BoldItalic.ttf in Resources */,
-				C8AF117822D9063D00FFBA4F /* Roboto-Thin.ttf in Resources */,
-				C8AF117B22D9063D00FFBA4F /* abeatbykai_art_lg.jpg in Resources */,
-				F723F88822EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black.otf in Resources */,
-				F723F89322EDAAAD006A7E63 /* Mostardesign - Sofia Pro Light Italic.otf in Resources */,
-				C8AF117422D9063D00FFBA4F /* Roboto-LightItalic.ttf in Resources */,
-				C8AF116E22D9063D00FFBA4F /* RobotoCondensed-BoldItalic.ttf in Resources */,
-				F723F88B22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Black Italic.otf in Resources */,
-				F723F88C22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Bold.otf in Resources */,
-				F723F88622EDAAAD006A7E63 /* Mostardesign - Sofia Pro UltraLight.otf in Resources */,
-				C8AF117122D9063D00FFBA4F /* Roboto-ThinItalic.ttf in Resources */,
-				F723F88F22EDAAAD006A7E63 /* Mostardesign - Sofia Pro Regular.otf in Resources */,
-				F723F89422EDAAAD006A7E63 /* Mostardesign - Sofia Pro ExtraLight Italic.otf in Resources */,
-				C8AF116C22D9063D00FFBA4F /* Roboto-MediumItalic.ttf in Resources */,
-				C8AF117D22D9063D00FFBA4F /* abeatbyKaiRegular.otf in Resources */,
+				0D70ADD123281A5100E75B99 /* Sofia Pro ExtraLight Italic.otf in Resources */,
+				0D70ADCD23281A5100E75B99 /* Sofia Pro Light.otf in Resources */,
+				0D70ADC923281A5100E75B99 /* Sofia Pro Regular Italic.otf in Resources */,
+				0D70ADD423281A5100E75B99 /* Sofia Pro Bold Italic.otf in Resources */,
 				C8AF114122D9044200FFBA4F /* Main.storyboard in Resources */,
-				C8AF116D22D9063D00FFBA4F /* RobotoCondensed-Italic.ttf in Resources */,
+				0D70ADCF23281A5100E75B99 /* Sofia Pro Black Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,14 +427,11 @@
 			files = (
 				F7FC722222ECF030000C533C /* UIColorExtension.swift in Sources */,
 				F7FC722322ECF030000C533C /* TableView+Extension.swift in Sources */,
-				C884E39F22E319C400F178AA /* PriorityListViewController.swift in Sources */,
 				F7FC722422ECF030000C533C /* String+Extension.swift in Sources */,
 				F723F8A022EDE161006A7E63 /* AddProritiesViewController.swift in Sources */,
 				F7FC722822ECF030000C533C /* Image+Extension.swift in Sources */,
-				C884E3A522E31A8200F178AA /* WriteThreeWordViewController.swift in Sources */,
 				F7FC722722ECF030000C533C /* Animate+Extension.swift in Sources */,
 				F7FC722A22ECF030000C533C /* View+Extension.swift in Sources */,
-				C884E3A322E31A7300F178AA /* ThrreeWordListViewController.swift in Sources */,
 				F7FC722922ECF030000C533C /* ViewController+Extension.swift in Sources */,
 				C8AF113E22D9044200FFBA4F /* ViewController.swift in Sources */,
 				F7FC722122ECF030000C533C /* Int+Exrtension.swift in Sources */,
@@ -567,14 +442,11 @@
 				F723F87322EDAA87006A7E63 /* DashboardViewController.swift in Sources */,
 				A5D2459B231195C6009387F2 /* AppStateManager.swift in Sources */,
 				F7B47078230F21E7009907E6 /* Messages.swift in Sources */,
-				C87BA6F922E2264B004821A4 /* MainTabBarController.swift in Sources */,
-				C86AF87B22DA2BBE00915525 /* DrawableViewController.swift in Sources */,
 				C8920D2C22D9D4A200190B09 /* SignupViewController.swift in Sources */,
 				F723F89C22EDE11D006A7E63 /* MindfulViewController.swift in Sources */,
 				F7B47076230F21D5009907E6 /* LoadingOverlay.swift in Sources */,
 				C8920D2E22D9D4AD00190B09 /* ForgotViewController.swift in Sources */,
 				F7FC722622ECF030000C533C /* Button+Extension.swift in Sources */,
-				C87BA6F722E223F2004821A4 /* HomeViewController.swift in Sources */,
 				F723F8A222EDE183006A7E63 /* WellnessViewController.swift in Sources */,
 				F723F89E22EDE13E006A7E63 /* ProritiesViewController.swift in Sources */,
 				C8920D2A22D9D49700190B09 /* SignInViewController.swift in Sources */,
@@ -583,7 +455,6 @@
 				F723F87122EDA8E6006A7E63 /* BaseNavigationController.swift in Sources */,
 				F7FC722022ECF030000C533C /* CollectionView+Extension.swift in Sources */,
 				F723F89822EDC55D006A7E63 /* JournalViewController.swift in Sources */,
-				C884E3A122E31A6100F178AA /* SetPrioritiesViewController.swift in Sources */,
 				F7FC722522ECF030000C533C /* Dictionary+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +602,8 @@
 			baseConfigurationReference = 65AFEE0A383936F736D9C64B /* Pods-Stress To Joy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Stress To Joy/Stress To Joy.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68Z43GCQJY;
 				INFOPLIST_FILE = "Stress To Joy/Info.plist";
@@ -739,8 +612,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rozina.stressApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rozina.StressToJoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -751,6 +625,8 @@
 			baseConfigurationReference = B9F2AF0BEFB5411F8ED9A8D0 /* Pods-Stress To Joy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Stress To Joy/Stress To Joy.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68Z43GCQJY;
 				INFOPLIST_FILE = "Stress To Joy/Info.plist";
@@ -759,8 +635,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rozina.stressApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rozina.StressToJoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
