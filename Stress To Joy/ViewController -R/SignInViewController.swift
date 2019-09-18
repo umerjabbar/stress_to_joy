@@ -24,7 +24,7 @@ class SignInViewController: BaseViewController {
     @IBAction func buttonAction(_ sender: Any) {
         if let email = self.emailTextField.text, !email.isEmpty {
             if let password = self.passwordTextField.text, !password.isEmpty {
-                self.signIn(email: email, password: password)
+                self.signIn(email: email.trimmingCharacters(in: .whitespacesAndNewlines), password: password.trimmingCharacters(in: .whitespacesAndNewlines))
             }else{
                 self.showErrorWith(message: "Please type in your password")
             }

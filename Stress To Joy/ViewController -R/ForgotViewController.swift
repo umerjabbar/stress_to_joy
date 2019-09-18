@@ -26,7 +26,7 @@ class ForgotViewController: BaseViewController {
     
     @IBAction func buttonAction(_ sender: Any) {
         if let email = self.emailTextField.text, !email.isEmpty {
-            self.forgotPassword(email: email)
+            self.forgotPassword(email: email.trimmingCharacters(in: .whitespacesAndNewlines))
         }else{
             self.showErrorWith(message: "Please type in your email")
         }
@@ -35,7 +35,7 @@ class ForgotViewController: BaseViewController {
     
     func forgotPassword(email: String){
         self.startLoading()
-        Auth.auth().sendPasswordReset(withEmail: self.email) { (error) in
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             self.stopLoading()
             if let err = error {
                 self.showErrorWith(message: err.localizedDescription)

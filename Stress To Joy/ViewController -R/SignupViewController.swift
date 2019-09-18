@@ -52,7 +52,7 @@ class SignupViewController: BaseViewController {
         
         if let email = self.emailTextField.text, !email.isEmpty {
             if let password = self.passwordTextField.text, !password.isEmpty {
-                self.signup(email: email, password: password)
+                self.signup(email: email.trimmingCharacters(in: .whitespacesAndNewlines), password: password.trimmingCharacters(in: .whitespacesAndNewlines))
             }else{
                 self.showErrorWith(message: "Please type in your password")
             }
@@ -67,9 +67,9 @@ class SignupViewController: BaseViewController {
             if let result = authResult {
                 Database.database().reference().child("users").child(result.user.uid).setValue([
                     "id": result.user.uid,
-                    "f_name": self.f_name,
-                    "l_name": self.l_name,
-                    "email": result.user.email ?? self.email,
+                    "f_name": self.f_name.trimmingCharacters(in: .whitespacesAndNewlines),
+                    "l_name": self.l_name.trimmingCharacters(in: .whitespacesAndNewlines),
+                    "email": result.user.email ?? self.email.trimmingCharacters(in: .whitespacesAndNewlines),
                     ])
                 self.stopLoading()
                 self.showSuccessMessage(message: "Successfully created")

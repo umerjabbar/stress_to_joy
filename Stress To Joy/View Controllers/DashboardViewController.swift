@@ -31,6 +31,21 @@ class DashboardViewController: BaseViewController {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         
+        self.checkForVerification()
+        
+    }
+    
+    func checkForVerification(){
+        if !(Auth.auth().currentUser?.isEmailVerified ?? true){
+            Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+                self.stopLoading()
+                if let err = error {
+                    self.showErrorWith(message: err.localizedDescription)
+                }else{
+                    self.showSuccessMessage(message: "Verification email has been sent to you")
+                }
+            })
+        }
     }
     
     @IBAction func linkButtonAction(_ sender: Any) {
